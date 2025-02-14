@@ -1,0 +1,45 @@
+.sidebar-right-align {
+    align-items: flex-end !important; /* Aligns items (links, icons, etc.) to the right */
+    text-align: right !important; /* Aligns text inside links */
+    width: 100%; /* Ensures full width for proper alignment */
+}
+
+.sidebar-right-align, 
+.sidebar-right-align a, 
+.sidebar-right-align .nav-link {
+    color: white !important; /* Ensures all text is white */
+}
+
+.nav-link {
+    justify-content: flex-end !important; /* Moves text & icon to the right */
+    text-align: right; /* Ensures text inside the link is right-aligned */
+    display: flex; /* Ensures flexbox alignment works */
+    width: 100%; /* Takes full width of sidebar */
+}
+
+.nav-link.active {
+    /*background-color: #ffcc00 !important; /* Change background color */*/
+    background-color: white !important; /* Change background color */
+    color: orange !important; /* Change text color */
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: black !important;
+}
+
+.shutter-link {
+    align-self: flex-end !important; /* Moves the link to the right */
+    text-align: right !important; /* Ensures text is right-aligned */
+    width: 100%; /* Allows full-width alignment */
+    display: flex; /* Ensures proper flexbox behavior */
+    justify-content: flex-end; /* Moves text to the right */
+    font-weight: 700;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px; /* Adjust spacing between icons */
+    justify-content: center; /* Centers icons */
+    align-items: center; /* Aligns them vertically */
+    padding-top: 30px;
+}

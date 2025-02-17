@@ -12,6 +12,10 @@ p, h1, label {
     color: white !important;
 }
 
+.modal, .btn-close {
+    color: white !important;
+}
+
 form {
     margin-bottom: 20px;
 }
@@ -72,4 +76,44 @@ form {
     height: 300px;
     object-fit: cover;
     display: block;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #333 !important; /* Dark background for the modal */
+    color: white !important; /* White text for better contrast */
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #444; /* Lighter border for the header */
+    background-color: #444; /* Ensure header has a distinct background */
+}
+
+.modal-body {
+    color: white; /* Ensure body text is white */
+}
+
+button.close {
+    color: white !important; /* Close button color */
+    opacity: 1 !important; /* Ensure it's fully visible */
+    font-size: 2rem; /* Make it larger for better visibility */
+}
+
+button.close:hover {
+    color: #ffcc00 !important; /* Change close button color on hover */
+}
+
+.modal-footer {
+    border-top: 1px solid #444; /* Lighter top border */
+    background-color: #444; /* Match footer with the header */
+}
+
+.modal-header .close {
+    color: #fff !important; /* Close button color in the header */
+}
+
+.modal-body img {
+    max-width: 100%; /* Ensure the image fits within the modal */
+    height: auto;
 }

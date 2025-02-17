@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let currentLocation = window.location.pathname;  // Use pathname instead of full URL
+    let currentLocation = window.location.pathname;
     let menuLinks = document.querySelectorAll(".nav-link");
 
     // First, remove active class from all links
@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Then, add the active class to the link that matches the current location
     menuLinks.forEach(link => {
-        if (link.href === window.location.href) {
+        let linkPath = new URL(link.href).pathname;
+        if (linkPath === currentLocation) {
             link.classList.add("active");
         }
     });

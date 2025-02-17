@@ -1,26 +1,49 @@
+* {
+    background-color: black;
+}
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: black;
+}
+
+p, h1, label {
+    color: white !important;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: orange !important;
+}
+
 .sidebar-right-align {
-    align-items: flex-end !important; /* Aligns items (links, icons, etc.) to the right */
-    text-align: right !important; /* Aligns text inside links */
-    width: 100%; /* Ensures full width for proper alignment */
+    align-items: flex-end !important;
+    text-align: right !important;
+    width: 100%;
+    margin-left: 0 !important;
 }
 
 .sidebar-right-align, 
 .sidebar-right-align a, 
 .sidebar-right-align .nav-link {
-    color: white !important; /* Ensures all text is white */
+    color: white !important;
 }
 
 .nav-link {
-    justify-content: flex-end !important; /* Moves text & icon to the right */
-    text-align: right; /* Ensures text inside the link is right-aligned */
-    display: flex; /* Ensures flexbox alignment works */
-    width: 100%; /* Takes full width of sidebar */
+    justify-content: flex-end !important;
+    text-align: right;
+    display: flex;
+    width: 100%;
 }
 
 .nav-link.active {
-    /*background-color: #ffcc00 !important; /* Change background color */*/
+    /*background-color: #ffcc00 !important;
     background-color: white !important; /* Change background color */
-    color: orange !important; /* Change text color */
+    color: orange !important;
 }
 
 .nav-pills {
@@ -28,18 +51,25 @@
 }
 
 .shutter-link {
-    align-self: flex-end !important; /* Moves the link to the right */
-    text-align: right !important; /* Ensures text is right-aligned */
-    width: 100%; /* Allows full-width alignment */
-    display: flex; /* Ensures proper flexbox behavior */
-    justify-content: flex-end; /* Moves text to the right */
+    align-self: flex-end !important;
+    text-align: right !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     font-weight: 700;
 }
 
 .icon-container {
     display: flex;
-    gap: 20px; /* Adjust spacing between icons */
-    justify-content: center; /* Centers icons */
-    align-items: center; /* Aligns them vertically */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     padding-top: 30px;
+}
+
+.uniform-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }

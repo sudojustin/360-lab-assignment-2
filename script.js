@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let currentLocation = window.location.href;
+    let currentLocation = window.location.pathname;  // Use pathname instead of full URL
     let menuLinks = document.querySelectorAll(".nav-link");
 
     // First, remove active class from all links
@@ -7,15 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.remove("active");
     });
 
-    // Add active class to the home link immediately
-    let homeLink = document.querySelector(".nav-link[href='/']");  // Adjust this selector if needed
-    if (homeLink) {
+    // Add active class to the home link if we're on the root path
+    let homeLink = document.querySelector(".nav-link[href='/']");
+    if (homeLink && (currentLocation === '/' || currentLocation === '')) {
         homeLink.classList.add("active");
     }
 
     // Then, add the active class to the link that matches the current location
     menuLinks.forEach(link => {
-        if (link.href === currentLocation) {
+        if (link.href === window.location.href) {
             link.classList.add("active");
         }
     });
